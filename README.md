@@ -32,11 +32,39 @@ A **React-based data visualization dashboard** built with **Vite, Material-UI, a
 | PDF Exporting     | [html2canvas](https://html2canvas.hertzen.com/) + [jsPDF](https://parall.ax/products/jspdf) |
 | Linting           | [ESLint](https://eslint.org/) |
 
+
+## 📊 Features in Detail
+
+### 1️⃣ Interactive Data Visualization
+- Displays **real-time employment & population trends**.
+- Supports multiple chart types:
+  - 📈 **Line Charts** – Track trends over time.
+  - 📊 **Bar Charts** – Compare data effectively.
+  - 🥧 **Pie Charts** – Show proportions visually.
+- Built using **Chart.js** for smooth animations and interactions.
+
+### 2️⃣ AI-Powered Chatbot 🤖
+- Uses **Hugging Face API** to assist users with **data-driven insights**.
+- Provides **context-aware** answers to user queries.
+- Helps in analyzing employment and population trends.
+
+### 3️⃣ Export Dashboard as PDF 📄
+- Users can download reports that include:
+  - **Visualized Charts**
+  - **Summarized Data Insights**
+- Utilizes **html2canvas + jsPDF** to generate **high-quality PDFs**.
+- Supports **customized exports** (select specific charts, add notes).
+
+### 4️⃣ Advanced Filtering System 🎯
+- Users can **filter data dynamically** by:
+  - **Age Groups** (18-25, 26-40, 41-60, etc.)
+  - **Regions** (muncipality)
+  - **Gender**
+- Uses **React Context API** for efficient state management.
+- Ensures a **seamless user experience** with instant updates.
+
 ---
 
-# Project documentation
-
----
 
 ## **Installation & Setup**
 ### 1. Clone the repository  
@@ -47,3 +75,10 @@ npm install
 npm run dev
 npm run build
 
+
+## 📌 Environment Variables
+
+To run the project, create a `.env` file in the root directory and add:
+
+```env
+REACT_APP_HUGGINGFACE_API_KEY=your-api-key
